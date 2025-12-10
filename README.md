@@ -91,19 +91,5 @@ Contextual similarity using pretrained transformer embeddings, robust to paraphr
 Uses the pretrained RoBERTa NLI model (`ynie/roberta-large-snli_mnli_fever_anli_R1_R2_R3-nli`).
 Inference is performed in both directions (reference → hypothesis and hypothesis → reference), and the entailment probability is used as the NLI score.
 
-## **📂 Repository Structure**
 
-```
-semscore/
-├── metric.py        # core metric implementation
-├── phonetic.py      # phonetic similarity
-├── semantic.py      # BERTScore logic
-├── nli.py           # NLI inference
-├── normalize.py     # normalization utilities
-scripts/
-experiments/
-data/
-docs/
-README.md
-```
 
