@@ -1,3 +1,18 @@
+#!/usr/bin/env python3
+# Author: Bornali Phukon (UIUC)
+# Co-author: Xiuwen Zheng (UIUC)
+# Advisor: Prof. Mark Hasegawa-Johnson
+# Created: 2024
+# Project: Aligning ASR Evaluation with Human and LLM Judgments: Intelligibility Metrics Using Phonetic, Semantic, and NLI Approaches
+# Paper: https://arxiv.org/abs/2506.16528
+#
+# Description:
+# Implements the intelligibility metric combining:
+#   - Phonetic similarity
+#   - Semantic similarity (BERTScore)
+#   - NLI-based logical consistency
+
+
 import numpy as np
 import jellyfish, editdistance, torch
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
